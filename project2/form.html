@@ -1,11 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form</title>
 </head>
 <body>
-    
+    <h1>설문 조사</h1>
+    <form action="#" method="post">
+     
+        <label for="name">이름:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        
+       
+        <label>성별:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">남성</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">여성</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">기타</label>
+        <br><br>
+
+       
+        <label>학년:</label>
+        <input type="radio" id="year1" name="year" value="1">
+        <label for="year1">1학년</label>
+        <input type="radio" id="year2" name="year" value="2">
+        <label for="year2">2학년</label>
+        <input type="radio" id="year3" name="year" value="3">
+        <label for="year3">3학년</label>
+        <input type="radio" id="year4" name="year" value="4">
+        <label for="year4">4학년</label>
+        <br><br>
+        
+        <label>지금까지 이수한 과목:</label>
+        <input type="checkbox" id="cProgramming" name="courses[]" value="C프로그래밍">
+        <label for="cProgramming">C 프로그래밍</label>
+
+        <input type="checkbox" id="javaProgramming" name="courses[]" value="자바 프로그래밍">
+        <label for="javaProgramming">자바 프로그래밍</label>
+
+        <input type="checkbox" id="oss" name="courses[]" value="OSS">
+        <label for="oss">OSS (오픈 소스 소프트웨어 실습)</label>
+
+        <input type="checkbox" id="dataStructures" name="courses[]" value="데이터 구조">
+        <label for="dataStructures">데이터 구조</label>
+        <br><br>
+        
+        <label for="birthdate">생일:</label>
+        <input type="date" id="birthdate" name="birthdate">
+        <br><br>
+        
+
+        <label for="comments">코멘트:</label>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+        <br><br>
+        
+        
+        <input type="checkbox" id="agreement" name="agreement" value="yes" required>
+        <label for="agreement">약관에 동의합니다</label>
+        <br><br>
+        
+       
+        <input type="submit" value="제출">
+    </form>
 </body>
 </html>
